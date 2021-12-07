@@ -1,0 +1,142 @@
+body {
+  background-image: url("../assets/background.png");
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#switches {
+  margin-right: 10%;
+  margin-bottom: 40%;
+  margin-top: 25%;
+}
+.table_sw {
+  color: white;
+}
+.switchname {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-decoration: underline;
+  text-underline-offset: 10px; */
+  color: white;
+  margin-right: 10%;
+  background-color: rgba(8, 16, 87, 0.678);
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background: #bdc3c7;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+input:checked[type="checkbox"] {
+  background: #3498db;
+}
+
+input[type="checkbox"]::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+
+input:checked[type="checkbox"]::before {
+  left: 60px;
+}
+
+.toggle {
+  position: relative;
+  display: inline;
+}
+
+label {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.onbtn {
+  bottom: 15px;
+  left: 15px;
+}
+
+.ofbtn {
+  bottom: 15px;
+  right: 14px;
+  color: #34495e;
+}
+
+.num {
+  background-color: grey;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  color: white;
+}
+
+#heading {
+  font-size: 40px;
+  color: rgb(214, 214, 214);
+  margin-right: 30%;
+  text-align: center;
+  margin-top: 15%;
+  background-color: rgba(40, 102, 121, 0.651);
+  margin-left: 1%;
+  padding: 25px;
+  border-radius: 20px;
+}
+#para1 {
+  background-color: rgba(22, 63, 139, 0.644);
+  font-size: 45px;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+#para2 {
+  background-color: rgba(51, 106, 158, 0.644);
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+#str {
+  text-decoration: underline overline;
+  text-underline-offset: 6px;
+  font-size: 20px;
+  margin-left: 10%;
+}
+.sn {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid rgba(27, 82, 185, 0.466);
+  margin-right: 20%;
+}
